@@ -14,7 +14,7 @@ namespace fl {
 namespace pkg {
 namespace runtime {
 
-typedef Module* (*w2l_module_plugin_t)(int64_t nFeatures, int64_t nClasses);
+using w2l_module_plugin_t = Module* (*)(int64_t nFeatures, int64_t nClasses);
 
 class ModulePlugin : public Plugin {
  public:
